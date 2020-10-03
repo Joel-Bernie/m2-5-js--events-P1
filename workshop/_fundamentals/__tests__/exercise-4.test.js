@@ -13,4 +13,15 @@ test("Exercise 4", () => {
     )
   ).toStrictEqual(["chris", "liv", "dave"]);
   // add more tests here...
+  expect(
+    getValues(
+      [
+        { make: "Honda", model: "Civic"},
+        { make: "Hyundai", model: "Veloster"},
+        { make: "Volvo", model: "XC90"},
+        { make: "Fiat", model: "500"},
+      ],
+      "model"
+    )
+  ).toStrictEqual(["Civic", "Veloster", "XC90", "500"]);
 });
