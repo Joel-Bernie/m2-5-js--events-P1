@@ -24,4 +24,15 @@ test("Exercise 4", () => {
       "model"
     )
   ).toStrictEqual(["Civic", "Veloster", "XC90", "500"]);
+  // expect(
+  //   getValues(
+  //     [
+  //       { make: "Honda", model: "Civic"},
+  //       { make: "Hyundai", model: "Veloster"},
+  //       { make: "Volvo", model: "XC90"},
+  //       { make: "Fiat", model: "500"},
+  //     ],
+  //     "year"
+  //   )
+  // ).toStrictEqual(null);                 // doesn't work for some reason
 });

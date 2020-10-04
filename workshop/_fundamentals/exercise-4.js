@@ -3,16 +3,20 @@
 // 1. Write a function that accepts an array of objects and a key (string) as arguments and returns a new array with only the values of the corresponding key.
 // e.g. getValues([{name: 'chris', age: 23}, {name: 'liv', age: 36}, {name: 'dave', age: 43}, 'age']) returns [23, 36, 43]
 
-// - If the provided key is not any of the objects, return null for that value; // if key = undefined?
+// - If the provided key is not any of the objects, return null for that value; //
 
 const getValues = (arr, key) => {
   // Insert missing solution please
+  if(arr.includes(key) !== false) {
+    return null
+  } else {
   let keyArray = arr.map((obj) => {
     let soloKey = obj[key];
     return soloKey;
   })
   let combinedKeys = [...keyArray];
   return combinedKeys;
+}
 };
 
 // 2. Do a console.log to verify your function.
